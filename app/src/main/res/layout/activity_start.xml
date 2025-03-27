@@ -1,0 +1,64 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center">
+
+    <!-- Illustration Image -->
+    <ImageView
+        android:id="@+id/start_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/start_image"
+        android:scaleType="fitCenter"
+        android:src="@drawable/image1" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_image"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/lato_bold"
+        android:paddingTop="15dp"
+        android:text="@string/quick_fresh_meals_just_for_utu_norder_pick_up_enjoy"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <!-- Next Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_button"
+        android:layout_width="150dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/tagline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/gradient_button"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/yeon_sung"
+        android:padding="10dp"/>
+
+
+
+    <!-- Footer with Gradient Text -->
+    <TextView
+        android:id="@+id/footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/yeon_sung"
+        android:paddingBottom="20dp"
+        android:text="@string/design_by_Rmm"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="16sp" />
+</RelativeLayout>

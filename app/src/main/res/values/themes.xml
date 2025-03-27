@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.UtuCanteenApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryVariant">@color/green_dark</item>
+        <item name="colorAccent">@color/green_light</item>
+
+        <!-- Override Material3 Button Styles -->
+        <item name="materialButtonStyle">@style/CustomButton</item>
+        <item name="android:buttonStyle">@style/CustomButton</item>
+    </style>
+
+    <style name="Theme.UtuCanteenApp" parent="Base.Theme.UtuCanteenApp" />
+
+    <!-- Custom Button Style -->
+    <style name="CustomButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/gradient_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:elevation">6dp</item>
+    </style>
+</resources>

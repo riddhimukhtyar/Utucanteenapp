@@ -1,0 +1,60 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center">
+
+    <!-- Illustration Image -->
+
+    <!-- App Name -->
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="185dp"
+        android:layout_height="185dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:contentDescription="@string/logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_image"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/yeon_sung"
+        android:paddingTop="20dp"
+        android:text="@string/taste_of_utu"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/lato_bold"
+        android:paddingTop="15dp"
+        android:text="@string/order_your_favorite_food"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <!-- Footer with Gradient Text -->
+    <TextView
+        android:id="@+id/footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/yeon_sung"
+        android:paddingBottom="20dp"
+        android:text="@string/design_by_Rmm"
+        android:textAlignment="center"
+        android:textColor="#000000"
+    android:textSize="20sp" />
+</RelativeLayout>
